@@ -495,10 +495,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 562379794}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.203, y: 0.029044548, z: 0.299}
+  m_LocalRotation: {x: -0.008721164, y: -0.008593887, z: -0.0015579556, w: 0.9999238}
+  m_LocalPosition: {x: -0.22, y: 0.03, z: 0.28}
   m_LocalScale: {x: 0.4838496, y: 0.48384973, z: 0.48384973}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -1.0009, y: -0.9834, z: -0.17}
   m_Children: []
   m_Father: {fileID: 602917609}
   m_RootOrder: 0
@@ -601,7 +601,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 602917608}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.108, y: 0.14021513, z: 0.412}
+  m_LocalPosition: {x: -0.129, y: 0.14021513, z: 0.396}
   m_LocalScale: {x: 0.3042527, y: 0.30172524, z: 0.30048215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1051,10 +1051,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1446677056}
-  m_LocalRotation: {x: 0.29883632, y: 0.29883626, z: 0.64085644, w: 0.6408563}
-  m_LocalPosition: {x: -0.348, y: -0.069, z: 0.437}
+  m_LocalRotation: {x: 0.2981194, y: 0.29955143, z: 0.63931906, w: 0.6423901}
+  m_LocalPosition: {x: -0.34799987, y: -0.069, z: 0.43699983}
   m_LocalScale: {x: 0.062380947, y: 0.16590168, z: 0.22428823}
-  m_LocalEulerAnglesHint: {x: 0, y: 50, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 50, z: 89.725395}
   m_Children: []
   m_Father: {fileID: 964022551}
   m_RootOrder: 2
@@ -1161,6 +1161,7 @@ GameObject:
   - 33: {fileID: 1483534629}
   - 136: {fileID: 1483534628}
   - 23: {fileID: 1483534627}
+  - 114: {fileID: 1483534631}
   m_Layer: 0
   m_Name: wing1
   m_TagString: Untagged
@@ -1220,13 +1221,27 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1483534626}
-  m_LocalRotation: {x: -0.6330214, y: 0.7544072, z: -0.11161883, w: 0.13302246}
-  m_LocalPosition: {x: -0.41340533, y: 0.03213264, z: -0.2476686}
+  m_LocalRotation: {x: 0.6718143, y: -0.7255941, z: 0.10426803, w: -0.10633387}
+  m_LocalPosition: {x: -0.465, y: 0.046, z: -0.236}
   m_LocalScale: {x: 0.09104256, y: 0.40136915, z: 0.56175774}
-  m_LocalEulerAnglesHint: {x: 0, y: 160, z: 1000.0002}
+  m_LocalEulerAnglesHint: {x: 0.48349997, y: 162.87729, z: 994.3352}
   m_Children: []
   m_Father: {fileID: 964022551}
   m_RootOrder: 3
+--- !u!114 &1483534631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1483534626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae8b6fdad17aa3643969a18a46dca3ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  z: 30
+  flag: 0
+  test: 0
 --- !u!1 &1513834096
 GameObject:
   m_ObjectHideFlags: 0
@@ -1371,6 +1386,7 @@ GameObject:
   - 33: {fileID: 1843124452}
   - 136: {fileID: 1843124451}
   - 23: {fileID: 1843124450}
+  - 114: {fileID: 1843124454}
   m_Layer: 0
   m_Name: wing
   m_TagString: Untagged
@@ -1431,12 +1447,26 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1843124449}
   m_LocalRotation: {x: -0.6330214, y: 0.7544072, z: -0.11161883, w: 0.13302246}
-  m_LocalPosition: {x: 0.364813, y: -0.029211495, z: 0.3199805}
+  m_LocalPosition: {x: 0.336, y: -0.021, z: 0.255}
   m_LocalScale: {x: 0.09104256, y: 0.40136915, z: 0.56175774}
   m_LocalEulerAnglesHint: {x: 0, y: 160, z: 1000.0002}
   m_Children: []
   m_Father: {fileID: 964022551}
   m_RootOrder: 4
+--- !u!114 &1843124454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1843124449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 891160b71957f63448313da1c131620b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  z: 30
+  flag: 0
+  test: 0
 --- !u!1 &1902393433
 GameObject:
   m_ObjectHideFlags: 0
