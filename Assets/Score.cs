@@ -2,11 +2,23 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace Assets
 {
-    public class Score
+    public class Score : MonoBehaviour
     {
-        public static int points = 0;
+        public Text ScoreText;
+        public static float points = 0;
+
+        void start()
+        {
+        }
+   
+        void Update()
+        {
+            ScoreText.text = "Score: "+ points.ToString();
+        }
     }
 }
