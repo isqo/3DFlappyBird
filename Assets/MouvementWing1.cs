@@ -5,7 +5,7 @@ using System.Timers;
 using System;
 
 
-public class MouvementWingq : MonoBehaviour {
+public class MouvementWing1: MonoBehaviour {
     float z = 30f;
     public Timer timer1;
     public bool flag = false;

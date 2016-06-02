@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Timers;
 using System;
 
-public class MouvementWing2 : MonoBehaviour {
+public class MouvementWing : MonoBehaviour {
 
         float z = 30f;
         public Timer timer1;

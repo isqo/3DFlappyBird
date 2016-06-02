@@ -15,10 +15,10 @@ public class cMenu : MonoBehaviour {
 	}
 
 	void OnGUI(){
-		if (GUI.Button (new Rect (Screen.width / 2 - 50, Screen.height / 2, 100, 50), "Play")) {
+		if (GUI.Button (new Rect (Screen.width / 2 - 150 , Screen.height / 2, 100, 50), "Play level 1")) {
 			Application.LoadLevel ("ScGame");
 		}
-		GUI.Button (new Rect (Screen.width/2 - 50, Screen.height/2 + 70, 100, 50), "Scores");
+		GUI.Button (new Rect (Screen.width/2 + 50 , Screen.height/2 , 100, 50), "Play level 2");
 
 	}
 }
