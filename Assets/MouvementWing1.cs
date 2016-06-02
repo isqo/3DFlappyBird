@@ -6,7 +6,7 @@ using System;
 
 
 public class MouvementWing1: MonoBehaviour {
-    float z = 30f;
+    float z = 40f;
     public Timer timer1;
     public bool flag = false;
     public bool test = false;
@@ -14,31 +14,33 @@ public class MouvementWing1: MonoBehaviour {
     void Start () {
         timer1 = new Timer();
         timer1.Elapsed += new ElapsedEventHandler(timer1_Tick);
-        timer1.Interval = 1000; // in miliseconds
+        timer1.Interval = 500; // in miliseconds
         timer1.Start();
     }
 	
 	// Update is called once per frame
 	void Update () {
-        if(flag)
+        if(Input.GetKey("space") || flag)
         {
+           
 
-            if (test)
-            {
-                transform.Rotate(new Vector3(0.0f, 0.0f, -z));
-                test = false;
+                if (test)
+                {
+                    transform.Rotate(new Vector3(0.0f, 0.0f, -z));
+                    test = false;
 
-            }
-            else
-            {
-                transform.Rotate(new Vector3(0.0f, 0.0f, z));
-                test = true;
-            
+                }
+                else
+                {
+                    transform.Rotate(new Vector3(0.0f, 0.0f, z));
+                    test = true;
+
+                }
             }
             flag = false;
         }
      
-	}
+	
 
     private void timer1_Tick(object sender, EventArgs e)
     {

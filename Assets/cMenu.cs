@@ -24,7 +24,7 @@ public class cMenu : MonoBehaviour {
 			Application.LoadLevel ("ScGame");
 		}
 
-        if (GUI.Button(new Rect(Screen.width / 2 + 50, Screen.height / 2, 100, 50), "Quit"))
+        if (GUI.Button(new Rect(Screen.width / 2 + 100, Screen.height / 2, 100, 50), "Quit"))
         {
             Application.Quit();
         }
