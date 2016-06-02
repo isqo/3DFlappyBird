@@ -16,4 +16,6 @@ public class cMoveBird : MonoBehaviour {
 
         transform.Translate(0, 0, Time.deltaTime * Speed);
     }
+
+
 }
