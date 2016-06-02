@@ -5,6 +5,7 @@ public class cMoveBird : MonoBehaviour {
     public float Speed=5;
     public float Yvelocity = 12.0f;
     public static bool CollisionFlag = false;
+    public AudioClip son;
 
     // Use this for initialization
     void Start () {
@@ -16,7 +17,10 @@ public class cMoveBird : MonoBehaviour {
         if (!CollisionFlag)
         {
             if (Input.GetKey("space"))
+            {
                 GetComponent<Rigidbody>().velocity = new Vector3(0, Yvelocity, 0);
+                GetComponent<AudioSource>().PlayOneShot(son);
+            }
 
             transform.Translate(0, 0, Time.deltaTime * Speed);
         }
