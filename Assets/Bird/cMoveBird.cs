@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class cMoveBird : MonoBehaviour {
-    public float Speed=5;
+    public static float Speed=5;
     public float Yvelocity = 12.0f;
     public static bool CollisionFlag = false;
     public AudioClip son;
