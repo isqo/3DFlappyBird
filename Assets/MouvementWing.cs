@@ -7,45 +7,43 @@ using System;
 public class MouvementWing : MonoBehaviour {
 
         float z = 40f;
-        public Timer timer1;
-        public bool flag = false;
+        public Stopwatch timer1;
         public bool test = false;
+        public long delay;
         // Use this for initialization
         void Start()
         {
-            timer1 = new Timer();
-            timer1.Elapsed += new ElapsedEventHandler(timer1_Tick);
-            timer1.Interval = 500; // in miliseconds
-            timer1.Start();
+            timer1 = new Stopwatch();
+            delay = 500;
         }
 	
 	// Update is called once per frame
 	void Update () {
-
-            if (Input.GetKey("space") || flag)
+            if (!cMoveBird.CollisionFlag && Input.GetKey("space") || timer1.ElapsedMilliseconds < delay && timer1.ElapsedMilliseconds > 0)
             {
-            
-                    if (test)
-                    {
-                        transform.Rotate(new Vector3(0.0f, 0.0f, z));
-                        test = false;
 
-                    }
-                    else
-                    {
-                        transform.Rotate(new Vector3(0.0f, 0.0f, -z));
-                        test = true;
+                if (!timer1.IsRunning)
+                    timer1.Start();
 
-                    }
-              }
-            flag = false;
+                if (test)
+                {
+                    transform.Rotate(new Vector3(0.0f, 0.0f, -z));
+                    test = false;
+
+                }
+                else
+                {
+                    transform.Rotate(new Vector3(0.0f, 0.0f, z));
+                    test = true;
+
+                }
+            }
+
+        if (timer1.ElapsedMilliseconds > delay)
+        {
+            timer1.Reset();
+            timer1.Stop();
         }
-
-    
-
-    private void timer1_Tick(object sender, EventArgs e)
-    {
-        flag = true;
     }
 }
 
