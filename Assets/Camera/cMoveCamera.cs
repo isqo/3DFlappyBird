@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Assets.Levels.Level2;
+using Assets.Levels.Level3;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +15,14 @@ namespace Assets
         private float yRotation;
         private float xRotation;
 
+        void Start()
+        {
+            level3 level3 = new level3();
+            level3.isActif = true;
+
+            //level2 level2 = new level2();
+            //level2.isActif = true;
+        }
         void Update()
         {
             if (Input.GetMouseButton(1))
