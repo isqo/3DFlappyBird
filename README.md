@@ -17,7 +17,7 @@
 
 | key        | Action           | 
 | ------------- |:-------------:|
-| space bar | jump |
+| space bar | faby jump |
 
 to turn around, use the mouse.
 
