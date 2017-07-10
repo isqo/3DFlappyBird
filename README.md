@@ -14,7 +14,7 @@
 </a>
 
 ## Authors
-Ismail QOUIQA :: ismail.qouiqa@gmail.com :: [@QouiqaIsmail](https://twitter.com/QouiqaIsmail)
+Ismail QOUIQA :: ismail.qouiqa@gmail.com :: [@QouiqaIsmail](https://twitter.com/QouiqaIsmail)</br>
 Magali hautcoeur :: [@ilagam](https://github.com/ilagam)
 
 ## License
