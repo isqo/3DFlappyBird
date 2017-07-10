@@ -13,6 +13,17 @@
   <img alt="A-Painter" target="_blank" src="https://user-images.githubusercontent.com/8776142/27998775-abad835c-6514-11e7-8b01-b1cf63f93159.PNG" height="190" width="32%">
 </a>
 
+## key bindings
+
+| key        | Action           | 
+| ------------- |:-------------:|
+| space bar | jump |
+
+to turn around, use the mouse.
+
+## Built With
+* [Unity](https://unity3d.com/) - a popular game engine.
+
 ## Authors
 Ismail QOUIQA :: ismail.qouiqa@gmail.com :: [@QouiqaIsmail](https://twitter.com/QouiqaIsmail)</br>
 Magali hautcoeur :: [@ilagam](https://github.com/ilagam)
