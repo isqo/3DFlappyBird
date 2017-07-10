@@ -14,7 +14,7 @@
 </a>
 
 ## Platforms compatibility
-- Microsoft Windows
+- Desktop
 
 ## key bindings
 
