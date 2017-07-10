@@ -13,9 +13,6 @@
   <img alt="A-Painter" target="_blank" src="https://user-images.githubusercontent.com/8776142/27998775-abad835c-6514-11e7-8b01-b1cf63f93159.PNG" height="190" width="32%">
 </a>
 
-## Platforms compatibility
-- Desktop
-
 ## key bindings
 
 | key        | Action           | 
