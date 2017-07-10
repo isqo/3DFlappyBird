@@ -13,11 +13,13 @@ public class cEndGame : MonoBehaviour {
 	void OnGUI(){
 		if (GUI.Button (new Rect (Screen.width / 2 - 50, Screen.height / 2 + 35, 100, 30), "Replay")) 
             Application.LoadLevel ("ScLevel");
-		if (flag == false) 
+		if (flag == false) {
             WinOrLoseText.text = "You LOSE !";
-        else 
+        }
+        else {
             WinOrLoseText.text = "you WIN !";
-        
+        } 
+
         ScoreText.text = "Score: " + Score.points.ToString();
     }		
 }
