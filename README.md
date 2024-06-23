@@ -25,7 +25,7 @@ to turn around, use the mouse.
 * [Unity](https://unity3d.com/) - a popular game engine.
 
 ## Authors
-Ismail QOUIQA :: ismail.qouiqa@gmail.com :: [@QouiqaIsmail](https://twitter.com/QouiqaIsmail)</br>
+Ismail/Ismaël QOUIQA :: [@QouiqaIsmail](https://twitter.com/QouiqaIsmail)</br>
 Magali hautcoeur :: [@ilagam](https://github.com/ilagam)
 
 ## License
